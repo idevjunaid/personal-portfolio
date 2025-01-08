@@ -1,0 +1,11 @@
+{
+    "card": {
+        "name": "Junaid Amin",
+        "title": "Frontend Developer",
+        "address": "Faisalabad, Pakistan",
+        "sociallinks":{
+            "github":"https://github.com/junaid-amin",
+            "linkedin":"https://www.linkedin.com/in/junaid-amin/"
+        }
+    }
+}
