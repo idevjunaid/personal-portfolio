@@ -22,7 +22,7 @@ const ThemeSwitcher = () => {
     return (
         <button
             onClick={toggleTheme}
-            className="flex items-center justify-center w-10 h-10 rounded-full  shadow-md transition-all transform hover:scale-110 hover:rotate-12 ease-in-out duration-300 z-[999999]"
+            className="flex items-center justify-center w-10 h-10 rounded-full m-auto transition-all transform md:hover:scale-110 md:hover:rotate-12 ease-in-out duration-300 z-[999999]"
         >
             {isDarkMode ? (
                 <MdOutlineLightMode className="w-full h-full text-gray-400 hover:text-gray-100 p-2" />
