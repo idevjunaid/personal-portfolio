@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { MdOutlineLightMode } from "react-icons/md";
 import { PiMoonStarsBold } from "react-icons/pi";
 

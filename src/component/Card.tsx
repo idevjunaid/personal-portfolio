@@ -1,4 +1,4 @@
-import React from "react";
+// import react from "react";
 import Profile from "../assets/profile.png";
 import Data from "../data/data.json";
 import { FiGithub } from "react-icons/fi";
