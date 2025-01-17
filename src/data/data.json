@@ -1,11 +1,87 @@
 {
-    "card": {
-        "name": "Junaid Amin",
-        "title": "Frontend Developer",
-        "address": "Faisalabad, Pakistan",
-        "sociallinks":{
-            "github":"https://github.com/junaid-amin",
-            "linkedin":"https://www.linkedin.com/in/junaid-amin/"
-        }
+  "card": {
+    "name": "Junaid Amin",
+    "title": "Frontend Developer",
+    "address": "Faisalabad, Pakistan",
+    "sociallinks": {
+      "github": "https://github.com/junaid-amin",
+      "linkedin": "https://www.linkedin.com/in/junaid-amin/"
     }
+  },
+  "portfoliocards": {
+    "frontend": [
+      {
+        "title": "360training",
+        "image": "360training.png",
+        "description": "Worked on a Drupal-based website for a training company.",
+        "stack": "Drupal",
+        "link": "https://www.360training.com/"
+      },
+      {
+        "title": "Our Better World",
+        "image": "ourbetterworld.png",
+        "description": "Worked on frontend and backend development for a Drupal-based website.",
+        "stack": "Drupal",
+        "link": "https://www.ourbetterworld.org/"
+    },
+    {
+        "title": "95 Visual",
+        "image": "95visual.png",
+        "description": "Complete theme building for a Drupal-based project.",
+        "stack": "Drupal",
+        "link": "https://www.95visual.com/"
+      },
+      {
+        "title": "IATSE 728",
+        "image": "iatse728.png",
+        "description": "Complete theme building for a Drupal project.",
+        "stack": "Drupal",
+        "link":"https://www.iatse728.org/"
+      }
+    ],
+    "backend": [
+      {
+        "title": "Wallpaper App API",
+        "image":"API.png",
+        "stack": "Drupal",
+        "description": "Created APIs in Drupal for a wallpaper app."
+      },
+      {
+        "title": "Our Better World",
+        "description": "Worked on custom modules.",
+        "stack": "Drupal"
+
+      },
+      {
+        "title": "360training",
+        "description": "Handled backend functionalities and custom modules.",
+        "stack": "Drupal"
+
+      }
+    ],
+    "personalProjects": [
+      {
+        "title": "User Authentication",
+        "image":"user-authentication.png",
+        "stack": "MERN",
+        "description": "Built a user authentication app for personal learning."
+      },
+      {
+        "title": "Task Management App",
+        "stack": "MERN",
+        "description": "Developed a task management application."
+      },
+      {
+        "title": "Notes App",
+        "stack": "MERN",
+        "description": "Created a notes application for practice."
+      }
+    ],
+    "react": [
+      {
+        "title": "Personal Portfolio",
+        "description": "Built several portfolio websites using React."
+      }
+    ]
+  }
 }

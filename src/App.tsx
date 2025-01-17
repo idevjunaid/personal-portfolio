@@ -4,6 +4,7 @@ import Card from './component/Card';
 import Navbar from './component/Navbar';
 import Hero from './component/Hero';
 import Loader from './component/Loader';
+import Portfolio from './component/Portfolio';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -12,21 +13,21 @@ function App() {
     setTimeout(() => {
       setIsLoading(false);
     }, 1000);
-    const handleScroll = (event: WheelEvent) => {
-      event.preventDefault();
-      const scrollAmount = event.deltaY > 0 ? 100 : -100; // Adjust scroll amount as needed
-      window.scrollBy({
-        top: scrollAmount,
-        left: 0,
-        behavior: 'smooth',
-      });
-    };
+    // const handleScroll = (event: WheelEvent) => {
+    //   event.preventDefault();
+    //   const scrollAmount = event.deltaY > 0 ? 100 : -100; // Adjust scroll amount as needed
+    //   window.scrollBy({
+    //     top: scrollAmount,
+    //     left: 0,
+    //     behavior: 'smooth',
+    //   });
+    // };
 
-    window.addEventListener('wheel', handleScroll, { passive: false });
+    // window.addEventListener('wheel', handleScroll, { passive: false });
 
-    return () => {
-      window.removeEventListener('wheel', handleScroll);
-    };
+    // return () => {
+    //   window.removeEventListener('wheel', handleScroll);
+    // };
   }, [])
   return (
     <>
@@ -40,6 +41,7 @@ function App() {
           <Navbar />
           <div className="container m-auto px-2">
             <Hero />
+            <Portfolio />
           </div>
         </main>
       </div>
