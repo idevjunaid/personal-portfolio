@@ -3,14 +3,6 @@ import Tag from "./Tag";
 import { VscSparkleFilled } from "react-icons/vsc";
 import data from "../data/data.json";
 
-interface Card {
-  title: string;
-  image?: string; // Make image optional
-  description: string;
-  stack: string;
-  link?: string;
-}
-
 const Portfolio: React.FC = () => {
   const sections = Object.entries(data.portfoliocards);
 
