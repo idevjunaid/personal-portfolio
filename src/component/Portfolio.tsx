@@ -17,7 +17,7 @@ const Portfolio: React.FC = () => {
           <div key={sectionKey} className="card border border-1 border-red-500 rounded-[1rem] overflow-hidden relative max-h-96">
             {sectionValue.map((card: any, cardIndex: number) => ( // Use 'any' temporarily
               cardIndex === 0 && card.image ? ( // Check if card.image exists
-                <img src={`/src/assets/${card.image}`} alt={card.title} key={card.title} />
+                <img src={`/assets/${card.image}`} alt={card.title} key={card.title} />
               ) : null
             ))}
             <div className="z-10 absolute bottom-4 left-4">
