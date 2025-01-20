@@ -37,11 +37,11 @@ const Portfolio: React.FC = () => {
             className="card border border-1 border-red-500 rounded-[1rem] overflow-hidden relative max-h-96"
           >
             {sectionValue.map((card: any, cardIndex: number) => {
-              const imageKey = card.image as keyof typeof imageMap; 
+              const imageKey = card.image as keyof typeof imageMap;
               return (
                 cardIndex === 0 && imageKey && imageMap[imageKey] ? (
                   <img
-                    src={imageMap[imageKey]}
+                    src={imageMap[imageKey] ?? ""}
                     alt={card.title}
                     key={card.title}
                   />
