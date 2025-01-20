@@ -8,7 +8,7 @@ import visual from "../assets/95visual.png";
 import iatse from "../assets/iatse728.png";
 import API from "../assets/API.png";
 import UserAuthentication from "../assets/user-authentication.png";
-import Portfoliopng from "../assets/portfolio.png";
+import Portfoliopng from "../assets/Portfolio.png";
 
 const imageMap = {
   training: training,
