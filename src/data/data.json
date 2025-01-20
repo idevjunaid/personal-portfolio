@@ -12,28 +12,28 @@
     "frontend": [
       {
         "title": "360training",
-        "image": "360training.png",
+        "image": "training",
         "description": "Worked on a Drupal-based website for a training company.",
         "stack": "Drupal",
         "link": "https://www.360training.com/"
       },
       {
         "title": "Our Better World",
-        "image": "ourbetterworld.png",
+        "image": "ourbetterworld",
         "description": "Worked on frontend and backend development for a Drupal-based website.",
         "stack": "Drupal",
         "link": "https://www.ourbetterworld.org/"
     },
     {
         "title": "95 Visual",
-        "image": "95visual.png",
+        "image": "visual",
         "description": "Complete theme building for a Drupal-based project.",
         "stack": "Drupal",
         "link": "https://www.95visual.com/"
       },
       {
         "title": "IATSE 728",
-        "image": "iatse728.png",
+        "image": "iatse",
         "description": "Complete theme building for a Drupal project.",
         "stack": "Drupal",
         "link":"https://www.iatse728.org/"
@@ -42,7 +42,7 @@
     "backend": [
       {
         "title": "Wallpaper App API",
-        "image":"API.png",
+        "image":"API",
         "stack": "Drupal",
         "description": "Created APIs in Drupal for a wallpaper app."
       },
@@ -62,7 +62,7 @@
     "personalProjects": [
       {
         "title": "User Authentication",
-        "image":"user-authentication.png",
+        "image":"UserAuthentication",
         "stack": "MERN",
         "description": "Built a user authentication app for personal learning."
       },
@@ -80,6 +80,7 @@
     "react": [
       {
         "title": "Personal Portfolio",
+        "image":"Portfolio",
         "description": "Built several portfolio websites using React."
       }
     ]

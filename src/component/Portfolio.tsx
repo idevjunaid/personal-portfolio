@@ -2,6 +2,29 @@ import React from "react";
 import Tag from "./Tag";
 import { VscSparkleFilled } from "react-icons/vsc";
 import data from "../data/data.json";
+import training from "../assets/360training.png";
+import ourbetterworld from "../assets/ourbetterworld.png";
+import visual from "../assets/95visual.png";
+import iatse from "../assets/iatse728.png";
+import API from "../assets/API.png";
+import UserAuthentication from "../assets/user-authentication.png";
+import Portfoliopng from "../assets/portfolio.png";
+
+
+interface imageMap {
+  [key: string]: string;
+}
+
+
+const imageMap = {
+  training: training,
+  ourbetterworld: ourbetterworld,
+  visual: visual,
+  iatse: iatse,
+  API: API,
+  UserAuthentication: UserAuthentication,
+  Portfolio: Portfoliopng
+};
 
 const Portfolio: React.FC = () => {
   const sections = Object.entries(data.portfoliocards);
@@ -17,7 +40,7 @@ const Portfolio: React.FC = () => {
           <div key={sectionKey} className="card border border-1 border-red-500 rounded-[1rem] overflow-hidden relative max-h-96">
             {sectionValue.map((card: any, cardIndex: number) => ( // Use 'any' temporarily
               cardIndex === 0 && card.image ? ( // Check if card.image exists
-                <img src={`/assets/${card.image}`} alt={card.title} key={card.title} />
+                <img src={imageMap[card.image]} alt={card.title} key={card.title} />
               ) : null
             ))}
             <div className="z-10 absolute bottom-4 left-4">
