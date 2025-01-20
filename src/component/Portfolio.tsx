@@ -20,14 +20,6 @@ const imageMap = {
   Portfolio: Portfoliopng,
 };
 
-// Define the type for the card
-interface Card {
-  image?: keyof typeof imageMap; // The image should match a key in imageMap
-  title: string;
-  description?: string;
-  stack?: string;
-  link?: string;
-}
 
 const Portfolio: React.FC = () => {
   const sections = Object.entries(data.portfoliocards);
