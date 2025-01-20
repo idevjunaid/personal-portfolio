@@ -10,12 +10,6 @@ import API from "../assets/API.png";
 import UserAuthentication from "../assets/user-authentication.png";
 import Portfoliopng from "../assets/portfolio.png";
 
-
-interface imageMap {
-  [key: string]: string;
-}
-
-
 const imageMap = {
   training: training,
   ourbetterworld: ourbetterworld,
@@ -23,8 +17,17 @@ const imageMap = {
   iatse: iatse,
   API: API,
   UserAuthentication: UserAuthentication,
-  Portfolio: Portfoliopng
+  Portfolio: Portfoliopng,
 };
+
+// Define the type for the card
+interface Card {
+  image?: keyof typeof imageMap; // The image should match a key in imageMap
+  title: string;
+  description?: string;
+  stack?: string;
+  link?: string;
+}
 
 const Portfolio: React.FC = () => {
   const sections = Object.entries(data.portfoliocards);
@@ -37,12 +40,22 @@ const Portfolio: React.FC = () => {
       </h1>
       <div className="grid grid-cols-2 gap-4 relative">
         {sections.map(([sectionKey, sectionValue]) => (
-          <div key={sectionKey} className="card border border-1 border-red-500 rounded-[1rem] overflow-hidden relative max-h-96">
-            {sectionValue.map((card: any, cardIndex: number) => ( // Use 'any' temporarily
-              cardIndex === 0 && card.image ? ( // Check if card.image exists
-                <img src={imageMap[card.image]} alt={card.title} key={card.title} />
-              ) : null
-            ))}
+          <div
+            key={sectionKey}
+            className="card border border-1 border-red-500 rounded-[1rem] overflow-hidden relative max-h-96"
+          >
+            {sectionValue.map((card: any, cardIndex: number) => {
+              const imageKey = card.image as keyof typeof imageMap; // Explicitly cast card.image
+              return (
+                cardIndex === 0 && imageKey && imageMap[imageKey] ? (
+                  <img
+                    src={imageMap[imageKey]}
+                    alt={card.title}
+                    key={card.title}
+                  />
+                ) : null
+              );
+            })}
             <div className="z-10 absolute bottom-4 left-4">
               <Tag text={sectionKey} bg />
             </div>
