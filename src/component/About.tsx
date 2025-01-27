@@ -89,7 +89,7 @@ const About = () => {
       {aboutcards.map(([cardKey, card], cardIndex)=>{
         const imageKey = card.image as keyof typeof imageMap;
         return(
-          <div key={cardKey} className="card border border-1 border-[#d1d5e0] rounded-[1.25rem] text-center dark:border-[#d1d1cf80] p-5">
+          <div key={cardIndex} id={cardKey} className="card border border-1 border-[#d1d5e0] rounded-[1.25rem] text-center dark:border-[#d1d1cf80] p-5">
             <h1 className="title">{card.title}</h1>
             <div className="tags">
             {card.tags.map((tag, index)=>{

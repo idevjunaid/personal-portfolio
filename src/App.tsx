@@ -9,7 +9,7 @@ import About from './component/About';
 import Resume from './component/Resume';
 import Testimonial from './component/Testimonial';
 import Contact from './component/Contact';
-import Footer from './component/footer';
+import Footer from './component/Footer';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
