@@ -5,6 +5,11 @@ import Navbar from './component/Navbar';
 import Hero from './component/Hero';
 import Loader from './component/Loader';
 import Portfolio from './component/Portfolio';
+import About from './component/About';
+import Resume from './component/Resume';
+import Testimonial from './component/Testimonial';
+import Contact from './component/Contact';
+import Footer from './component/Footer';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -42,7 +47,12 @@ function App() {
           <div className="container m-auto px-2">
             <Hero />
             <Portfolio />
+            <About />
+            <Resume />
+            <Testimonial />
+            <Contact />
           </div>
+          <Footer />
         </main>
       </div>
     </>

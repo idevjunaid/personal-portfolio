@@ -6,7 +6,7 @@ import { AiOutlineLinkedin } from "react-icons/ai";
 import  Button  from "./Button";
 
 const Card = () => {
-    const data = Data.card;
+    const data = Data.personal;
     return (
         <>
             <div className="card p-5">

@@ -2,17 +2,28 @@ import React, { useState } from "react";
 import { IoCloseSharp } from "react-icons/io5";
 import { FaChevronLeft } from "react-icons/fa";
 import { FaChevronRight } from "react-icons/fa";
-import ourbetterworld from "../assets/ourbetterworld.png";
+import { RiShareLine } from "react-icons/ri";
+import { MdOutlineFullscreen } from "react-icons/md";
+import { RiZoomInLine } from "react-icons/ri";
 import Tag from "./Tag";
+import {
+  training,
+  ourbetterworld,
+  visual,
+  iatse,
+  API,
+  UserAuthentication,
+  Portfoliopng,
+} from "../component/importImages";
 
 const imageMap = {
-  // training: training,
+  training: training,
   ourbetterworld: ourbetterworld,
-  // visual: visual,
-  // iatse: iatse,
-  // API: API,
-  // UserAuthentication: UserAuthentication,
-  // Portfolio: Portfoliopng,
+  visual: visual,
+  iatse: iatse,
+  API: API,
+  UserAuthentication: UserAuthentication,
+  Portfolio: Portfoliopng,
 };
 interface GalleryProps {
   items: any[];
@@ -34,15 +45,35 @@ const Gallery: React.FC<GalleryProps> = ({ items, onClose }) => {
   };
 
   return (
-    <div className="gallery-modal fixed w-full  top-0 left-0 flex justify-center items-center z-[999999] bg-[#212121] flex flex-col">
-      <div className="border border-1 border-red-600 flex justify-between w-full align-center z-[1]">
-        <div className="number"></div>
-        <div className="btns_holder flex gap-2 align-center">
+    <div className="gallery-modal fixed w-full  top-0 left-0 flex justify-center items-center z-[999999] bg-[#212121] flex flex-col ">
+      <div className="border border-1 border-red-600 py-1 px-3 flex justify-between w-full align-center z-[1]">
+        <div className="number py-2 px-4 text-[#ffffff] font-xl bg-[#0006] rounded-[1.25rem]">
+          1/4
+        </div>
+        <div className="btns_holder flex gap-2 align-center flex-row-reverse">
           <button
             onClick={onClose}
             className="bg-[#aa70e0] rounded-[1.25rem] p-2.5 text-black"
           >
             <IoCloseSharp className="text-2xl" />
+          </button>
+          <button
+            onClick={onClose}
+            className="bg-[#0006] rounded-[1.25rem] px-3.5 border border-1 border-light py-2.5 text-[#fff]"
+          >
+            <RiShareLine className="text-xl" />
+          </button>
+          <button
+            onClick={onClose}
+            className="bg-[#0006] rounded-[1.25rem] px-3.5 border border-1 border-light py-2.5 text-[#fff]"
+          >
+            <MdOutlineFullscreen className="text-xl" />
+          </button>
+          <button
+            onClick={onClose}
+            className="bg-[#0006] rounded-[1.25rem] px-3.5 border border-1 border-light py-2.5 text-[#fff]"
+          >
+            <RiZoomInLine className="text-xl" />
           </button>
         </div>
       </div>

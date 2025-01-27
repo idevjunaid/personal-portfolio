@@ -1,8 +1,10 @@
 {
-  "card": {
+  "personal": {
     "name": "Junaid Amin",
     "title": "Frontend Developer",
     "address": "Faisalabad, Pakistan",
+    "number": "0314-3002813",
+    "email": "junaidamin128@gmail.com",
     "sociallinks": {
       "github": "https://github.com/junaid-amin",
       "linkedin": "https://www.linkedin.com/in/junaid-amin/"
@@ -23,8 +25,8 @@
         "description": "Worked on frontend and backend development for a Drupal-based website.",
         "stack": "Drupal",
         "link": "https://www.ourbetterworld.org/"
-    },
-    {
+      },
+      {
         "title": "95 Visual",
         "image": "visual",
         "description": "Complete theme building for a Drupal-based project.",
@@ -36,13 +38,13 @@
         "image": "iatse",
         "description": "Complete theme building for a Drupal project.",
         "stack": "Drupal",
-        "link":"https://www.iatse728.org/"
+        "link": "https://www.iatse728.org/"
       }
     ],
     "backend": [
       {
         "title": "Wallpaper App API",
-        "image":"API",
+        "image": "API",
         "stack": "Drupal",
         "description": "Created APIs in Drupal for a wallpaper app."
       },
@@ -50,19 +52,17 @@
         "title": "Our Better World",
         "description": "Worked on custom modules.",
         "stack": "Drupal"
-
       },
       {
         "title": "360training",
         "description": "Handled backend functionalities and custom modules.",
         "stack": "Drupal"
-
       }
     ],
     "personalProjects": [
       {
         "title": "User Authentication",
-        "image":"UserAuthentication",
+        "image": "UserAuthentication",
         "stack": "MERN",
         "description": "Built a user authentication app for personal learning."
       },
@@ -80,9 +80,121 @@
     "react": [
       {
         "title": "Personal Portfolio",
-        "image":"Portfolio",
+        "image": "Portfolio",
         "description": "Built several portfolio websites using React."
       }
     ]
+  },
+  "aboutcards": {
+    "s1": {
+      "title": "Languages",
+      "tags": ["HTML", "CSS", "JavaScript", "TypeScript", "PHP"],
+      "description": "Proficient in core web development languages used for front-end and back-end development.",
+      "image": "s01"
+    },
+    "s2": {
+      "title": "Frameworks",
+      "tags": ["React", "Express.js", "Tailwind"],
+      "description": "Experienced in modern frameworks for building efficient, responsive, and scalable applications.",
+      "image": "s02"
+    },
+    "s3": {
+      "title": "CMS",
+      "tags": ["Drupal"],
+      "description": "Expertise in content management systems like Drupal to create and manage dynamic websites.",
+      "image": "s03"
+    },
+    "s4": {
+      "title": "Database",
+      "tags": ["MySQL", "MariaDB", "MongoDB"],
+      "description": "Knowledge of relational and NoSQL databases for storing and managing data efficiently.",
+      "image": "s04"
+    }
+  },
+  "education": {
+    "e1": {
+      "title": "Bachelor of Science in Computer Science",
+      "description": "A comprehensive program focusing on core computer science concepts such as programming, data structures, algorithms, and web development.",
+      "duration": "2018-2022",
+      "institution": "Government University Of Faisalabad"
+    },
+    "e2": {
+      "title": "Intermediate",
+      "description": "Intermediate education specializing in pre-engineering subjects, including mathematics, physics, and chemistry.",
+      "duration": "2016-2018",
+      "institution": "Government College Of Science Faisalabad"
+    }
+  },
+  "work": {
+    "w1": {
+      "title": "Internship",
+      "description": "Gained hands-on experience in frontend development and worked on small-scale projects under the guidance of senior developers.",
+      "duration": "2022-2022",
+      "company": "Codeetechs"
+    },
+    "w2": {
+      "title": "Frontend Drupal Developer",
+      "description": "Focused on designing and implementing user interfaces using Drupal, delivering responsive and user-friendly web solutions.",
+      "duration": "2022-2024",
+      "company": "Codeetechs"
+    },
+    "w3": {
+      "title": "Fullstack Drupal Developer",
+      "description": "Leading both frontend and backend development tasks, integrating custom modules, and optimizing performance for enterprise-level Drupal applications.",
+      "duration": "2024-continue",
+      "company": "Codeetechs"
+    }
+  },
+  "tools": {
+    "t1": {
+      "title": "HTML",
+      "image": "html"
+    },
+    "t2": {
+      "title": "CSS",
+      "image": "css"
+    },
+    "t3": {
+      "title": "JavaScript",
+      "image": "js"
+    },
+    "t4": {
+      "title": "React",
+      "image": "react"
+    },
+    "t5": {
+      "title": "PHP",
+      "image": "php"
+    },
+    "t6": {
+      "title": "Drupal",
+      "image": "drupal"
+    },
+    "t7": {
+      "title": "VSCode",
+      "image": "vscode"
+    }
+  },
+  "testimonial": {
+    "client1": {
+      "info": {
+        "name": "John Doe",
+        "role": "Software Engineer",
+        "company": "ABC Company",
+        "avatar": "avatar01"
+      },
+      "description": "",
+      "projectlink": "https://www.google.com"
+    },
+    "client2": {
+      "info": {
+        "name": "John Doe",
+        "role": "Software Engineer",
+        "company": "ABC Company",
+        "avatar": "avatar02"
+      },
+      "description": "",
+      "projectlink": "https://www.google.com"
+    }
   }
 }
