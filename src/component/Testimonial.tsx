@@ -23,7 +23,7 @@ const Testimonial = () => {
       <h1 className="heading text-[#8f56cc] text-[3.5rem] [line-height:1.2] py-5">
         Clients say about me
       </h1>
-      <div className="slider-container max-w-[935px] overflow-hidden relative">
+      <div className="slider-container max-w-[865px] overflow-hidden relative">
         <Swiper
           loop={true}
           autoplay={{

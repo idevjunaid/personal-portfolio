@@ -186,3 +186,9 @@ html.dark body {
   background-clip:text !important;
   -webkit-text-fill-color:transparent;
 }
+
+.dark .heading{
+  background: -webkit-linear-gradient(15deg, #e4b8bf 0%, #cec4ef 80%) !important;
+  background-clip:text !important;
+  -webkit-text-fill-color:transparent;
+}

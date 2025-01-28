@@ -38,10 +38,10 @@ function App() {
     <>
       <Loader loading={isLoading} />
       <div className='main container m-auto gap-4 flex flex-col md:flex-row'>
-        <aside className='md:fixed md:max-w-80'>
+        <aside className='md:fixed md:max-w-96'>
           <Card />
         </aside>
-        <main className='ml-0 md:ml-80 w-full'>
+        <main className='ml-0 md:ml-96 w-full'>
 
           <Navbar />
           <div className="container m-auto px-2">

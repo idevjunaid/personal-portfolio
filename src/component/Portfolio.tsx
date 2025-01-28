@@ -37,9 +37,9 @@ const Portfolio: React.FC = () => {
 
   return (
     <>
-      <section id="portfolio">
+      <section id="portfolio" className="py-[5rem]" >
         <Tag text="Portfolio" icon={<VscSparkleFilled />} />
-        <h1 className="heading text-[#8f56cc] text-[3.5rem] [line-height:1.2] py-5">
+        <h1 className="heading text-[#8f56cc] text-[3rem] [line-height:1.2] py-5 mb-2">
           Check out my featured projects
         </h1>
         <div className="grid grid-cols-2 gap-4 relative">
@@ -48,10 +48,10 @@ const Portfolio: React.FC = () => {
               {sectionValue.map((card: any, cardIndex: number) => {
                 const imageKey = card.image as keyof typeof imageMap;
                 return cardIndex === 0 && imageKey && imageMap[imageKey] ? (
-                  <div className="" key={cardIndex}>
+                  <div className="max-h-[350px] overflow-hidden rounded-lg" key={cardIndex}>
                     <a
                       href="#"
-                      className="block group transition-transform duration-300 ease-[cubic-bezier(0.23, 0.65, 0.74, 1.09)] hover:scale-105"
+                      className="block group transition-transform duration-300 ease-[cubic-bezier(0.23, 0.65, 0.74, 1.09)] hover:scale-[1.1]"
                       onClick={(e) => {
                         e.preventDefault();
                         handleClick(sectionValue);

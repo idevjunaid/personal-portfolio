@@ -4,7 +4,7 @@ interface ButtonProps {
   text: string;
   varient: string;
   url: string;
-  icon: React.ReactNode;
+  icon?: React.ReactNode;
   icononly?: boolean;
   border?: boolean;
   onClick?: (event: React.MouseEvent<HTMLAnchorElement>) => void;

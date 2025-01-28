@@ -26,34 +26,39 @@ const Resume = () => {
   const tool = Object.entries(data.tools);
   return (
     <>
-      <section id="resume">
+      <section id="resume" className="py-[5rem]">
         <Tag text="Resume" icon={<VscSparkleFilled />} />
-        <h1 className="heading text-[#8f56cc] text-[3.5rem] [line-height:1.2] py-5">
+        <h1 className="heading text-[#8f56cc] text-[3rem] [line-height:1.2] py-5 mb-5">
           Education and practical experience
         </h1>
-        <p className="desc">
+        <p className="desc text-[#424550] dark:text-[#c7c6d3] text-base mb-16 font-normal">
           Be what you would seem to be - or, if you'd like it put more simply -
           never imagine yourself not to be otherwise than what it might appear
           to others that what you were or <a href="#">might have been</a> was
           not otherwise than what you had been would have appeared to them to be
           otherwise.
         </p>
-        <div className="education">
-          <h1 className="title">My Education</h1>
+        <div className="education py-5">
+          <h1 className="title text-3xl text-[#22232c] dark:text-[#e9e9f1] mb-5">My Education</h1>
           <div className="cards-holder flex flex-col">
             {education.map(([educationKey, educationValue], educationIndex) => {
               return (
                 <div
                   key={educationIndex}
                   id={educationKey}
-                  className="card p-5 flex items-center gap-5"
+                  className={`card p-5 flex items-center gap-5 border border-r-0 border-l-0 ${
+                    educationIndex === 0
+                      ? "border-t-1 border-b-1"
+                      : "border-b-2"
+                  } border-[#d1d5e0] dark:border-[#303033]`} 
+                  
                 >
-                  <p className="duration">{educationValue.duration}</p>
-                  <div className="info">
-                    <h1 className="title">{educationValue.title}</h1>
+                  <p className="duration flex-[1.5] text-sm text-[#424550] dark:text-[#c7c6d3] font-[400]">{educationValue.duration}</p>
+                  <div className="info flex-[3] text-xl text-[#22232c] dark:text-[#e9e9f1] font-[600]">
+                    <h1 className="title ">{educationValue.title}</h1>
                     <p className="institution">{educationValue.institution}</p>
                   </div>
-                  <p className="description">{educationValue.description}</p>
+                  <p className="description flex-[5]">{educationValue.description}</p>
                 </div>
               );
             })}
