@@ -10,11 +10,11 @@ const Card = () => {
   return (
     <>
       <div className="card py-3 px-5">
-        <div className="card-inside border borer-1 border-[#d1d5e0] rounded-[1.25rem] dark:border-[#d1d1cf80] p-[1.875rem] md:max-h-[96vh]">
+        <div className="card-inside border borer-1 border-[#d1d5e0] rounded-[1.25rem] dark:border-[#d1d1cf80] p-[1.875rem] lg:max-h-[96vh]">
           <div className="title text-3xl font-[700] text-[#22232c] dark:text-[#e9e9f1] mb-2">
             {data.name}
           </div>
-          <div className="profile-img overflow-hidden rounded-[1.5rem] md:max-h-[295px] mb-1">
+          <div className="profile-img overflow-hidden rounded-[1.5rem] lg:max-h-[295px] mb-1">
             <img src={Profile} alt="profile image" />
           </div>
           <div className="subheading">

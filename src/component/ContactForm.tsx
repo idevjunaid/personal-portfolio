@@ -10,7 +10,7 @@ function ContactForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="my-5">
       <div className="flex gap-5">
         {/* Your Name Field */}
         <input
@@ -18,7 +18,7 @@ function ContactForm() {
           type="text"
           name="your_name"
           placeholder="Your Name*"
-          className="w-full py-5 px-2 bg-transparent border border-0 text-xl border-b-2 border-[#d1d5e0] dark:border-[#d1d1cf80] focus:border-[#aa70e0] focus:outline-none"
+          className="w-full py-5 px-2 bg-transparent border border-0 text-xl border-b-2 border-[#d1d5e0] text-[#424550] dark:text-[#c7c6de] dark:border-[#d1d1cf80] focus:border-[#aa70e0] dark:focus:border-[#e4b8bf] focus:outline-none"
         />
         <ValidationError
           prefix="Your Name"
@@ -32,7 +32,7 @@ function ContactForm() {
           type="text"
           name="company_name"
           placeholder="Company Name*"
-          className="w-full py-5 px-2 bg-transparent border border-0 text-xl border-b-2 border-[#d1d5e0] dark:border-[#d1d1cf80] focus:border-[#aa70e0] focus:outline-none"
+          className="w-full py-5 px-2 bg-transparent border border-0 text-xl border-b-2 border-[#d1d5e0] text-[#424550] dark:text-[#c7c6de] dark:border-[#d1d1cf80] focus:border-[#aa70e0] dark:focus:border-[#e4b8bf] focus:outline-none"
         />
         <ValidationError
           prefix="Company Name"
@@ -47,7 +47,7 @@ function ContactForm() {
           type="email"
           name="email"
           placeholder="Email Address*"
-          className="w-full py-5 px-2 bg-transparent border border-0 text-xl border-b-2 border-[#d1d5e0] dark:border-[#d1d1cf80] focus:border-[#aa70e0] focus:outline-none"
+          className="w-full py-5 px-2 bg-transparent border border-0 text-xl border-b-2 border-[#d1d5e0] text-[#424550] dark:text-[#c7c6de] dark:border-[#d1d1cf80] focus:border-[#aa70e0] dark:focus:border-[#e4b8bf] focus:outline-none"
         />
         <ValidationError prefix="Email" field="email" errors={state.errors} />
 
@@ -56,7 +56,7 @@ function ContactForm() {
           id="phone"
           type="tel"
           name="phone"
-          className="w-full py-5 px-2 bg-transparent border border-0 text-xl border-b-2 border-[#d1d5e0] dark:border-[#d1d1cf80] focus:border-[#aa70e0] focus:outline-none"
+          className="w-full py-5 px-2 bg-transparent border border-0 text-xl border-b-2 border-[#d1d5e0] text-[#424550] dark:text-[#c7c6de] dark:border-[#d1d1cf80] focus:border-[#aa70e0] dark:focus:border-[#e4b8bf] focus:outline-none"
           placeholder="Phone Number"
         />
         <ValidationError prefix="Phone" field="phone" errors={state.errors} />
@@ -68,7 +68,7 @@ function ContactForm() {
           name="message"
           placeholder="A Few Words"
           rows={5}
-          className="w-full py-5 px-2 bg-transparent border border-0 text-xl border-b-2 border-[#d1d5e0] dark:border-[#d1d1cf80] focus:border-[#aa70e0] focus:outline-none resize-none "
+          className="w-full py-5 px-2 bg-transparent border border-0 text-xl border-b-2 border-[#d1d5e0] text-[#424550] dark:text-[#c7c6de] dark:border-[#d1d1cf80] focus:border-[#aa70e0] dark:focus:border-[#e4b8bf] focus:outline-none resize-none "
         />
         <ValidationError
           prefix="Message"
@@ -76,8 +76,7 @@ function ContactForm() {
           errors={state.errors}
         />
       </div>
-      {/* Submit Button */}
-      <button type="submit" disabled={state.submitting}>
+      <button type="submit" disabled={state.submitting} className="mt-10">
         <Button text="Send Message" varient="primary" url="#" icon={<MdOutlineSend />} />
       </button>
     </form>

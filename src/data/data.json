@@ -130,19 +130,24 @@
       "title": "Internship",
       "description": "Gained hands-on experience in frontend development and worked on small-scale projects under the guidance of senior developers.",
       "duration": "2022-2022",
-      "company": "Codeetechs"
+      "company": "Codeetechs",
+      "link": "https://codeetechs.com"
     },
     "w2": {
       "title": "Frontend Drupal Developer",
       "description": "Focused on designing and implementing user interfaces using Drupal, delivering responsive and user-friendly web solutions.",
       "duration": "2022-2024",
-      "company": "Codeetechs"
+      "company": "Codeetechs",
+      "link": "https://codeetechs.com"
+
     },
     "w3": {
       "title": "Fullstack Drupal Developer",
       "description": "Leading both frontend and backend development tasks, integrating custom modules, and optimizing performance for enterprise-level Drupal applications.",
       "duration": "2024-continue",
-      "company": "Codeetechs"
+      "company": "Codeetechs",
+      "link": "https://codeetechs.com"
+
     }
   },
   "tools": {
@@ -175,26 +180,31 @@
       "image": "vscode"
     }
   },
-  "testimonial": {
-    "client1": {
-      "info": {
-        "name": "John Doe",
-        "role": "Software Engineer",
-        "company": "ABC Company",
-        "avatar": "avatar01"
-      },
-      "description": "",
-      "projectlink": "https://www.google.com"
+ "testimonial": {
+  "client1": {
+    "info": {
+      "name": "John Doe",
+      "role": "Software Engineer",
+      "company": "ABC Company",
+      "siteLink" : "https://www.google.com",
+      "avatar": "avatar01",
+      "rating": 3
     },
-    "client2": {
-      "info": {
-        "name": "John Doe",
-        "role": "Software Engineer",
-        "company": "ABC Company",
-        "avatar": "avatar02"
-      },
-      "description": "",
-      "projectlink": "https://www.google.com"
-    }
+    "description": "The team demonstrated great technical skills, but there were some delays in the delivery. Overall, a good experience with room for improvement.",
+    "projectlink": "https://www.google.com"
+  },
+  "client2": {
+    "info": {
+      "name": "John Doe",
+      "role": "Software Engineer",
+      "company": "ABC Company",
+      "siteLink" : "https://www.google.com",
+      "avatar": "avatar02",
+      "rating": 5
+    },
+    "description": "An exceptional experience working with this team! They delivered beyond expectations, met all deadlines, and provided excellent support throughout the project.",
+    "projectlink": "https://www.google.com"
   }
+}
+
 }
