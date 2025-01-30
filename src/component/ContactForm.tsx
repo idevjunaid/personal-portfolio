@@ -11,7 +11,7 @@ function ContactForm() {
 
   return (
     <form onSubmit={handleSubmit} className="my-5">
-      <div className="flex gap-5">
+      <div className="flex lg:gap-5 flex-col lg:flex-row ">
         {/* Your Name Field */}
         <input
           id="your_name"
@@ -40,7 +40,7 @@ function ContactForm() {
           errors={state.errors}
         />
       </div>
-      <div className="flex gap-5">
+      <div className="flex lg:gap-5 flex-col lg:flex-row ">
         {/* Email Address Field */}
         <input
           id="email"

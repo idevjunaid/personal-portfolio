@@ -46,7 +46,7 @@ const Resume = () => {
                 <div
                   key={educationIndex}
                   id={educationKey}
-                  className={`card p-5 flex items-center gap-5 border border-r-0 border-l-0 ${
+                  className={`card p-5 flex flex-col lg:flex-row lg:items-center gap-5 border border-r-0 border-l-0 ${
                     educationIndex === 0
                       ? "border-t-1 border-b-1"
                       : "border-b-2"
@@ -72,7 +72,7 @@ const Resume = () => {
                 <div
                   key={workIndex}
                   id={workKey}
-                  className={`card p-5 flex items-center gap-5 border border-r-0 border-l-0 ${
+                  className={`card p-5 flex flex-col lg:flex-row lg:items-center gap-5 border border-r-0 border-l-0 ${
                     workIndex === 0
                       ? "border-t-1 border-b-1"
                       : "border-b-2"

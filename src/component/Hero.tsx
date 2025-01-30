@@ -19,13 +19,13 @@ const Hero: React.FC = () => {
     };
     return (
         <>
-            <section id="home" className="h-screen content-center">
+            <section id="home" className="lg:h-screen content-center py-[5rem]">
                 <Tag text="Let's meet" icon={<VscSparkleFilled />} />
                 <h1 className="heading text-[#8f56cc] text-[4rem] [line-height:1.2] py-5 mb-5">I'm Junaid Amin Web Developer.
                 </h1>
                 <div className="btn_holder flex gap-5">
-                    <Button text="My Work" varient="transparent" url="#portfolio" icon={<HiOutlineSquares2X2 />} icononly />
-                    <Button text="Download CV" varient="transparent" url="#" icon={<MdOutlineFileDownload />} border= {false} icononly onClick={handleDownload} />
+                    <Button text="My Work" varient="transparent" url="#portfolio" icon={<HiOutlineSquares2X2 />} />
+                    <Button text="Download CV" varient="transparent" url="#" icon={<MdOutlineFileDownload />} border= {false} onClick={handleDownload} />
                 </div>
             </section>
         </>

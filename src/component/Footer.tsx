@@ -6,7 +6,7 @@ import { AiOutlineLinkedin } from "react-icons/ai";
 const Footer = () => {
   const Data = data.personal;
   return (
-    <div>
+    <div className="container m-auto px-2">
       <div className="sociallinks flex justify-center items-center gap-5 mb-5">
         <a
           href={Data.sociallinks.github}
