@@ -8,7 +8,6 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { useRef } from "react";
 import { Swiper as SwiperType } from "swiper";
 import { FaStar, FaRegStar } from "react-icons/fa";
-import Button from "./Button";
 import { FaArrowRight } from "react-icons/fa6";
 
 const imageMap = {
