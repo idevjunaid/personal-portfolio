@@ -50,8 +50,8 @@ function App() {
                 ease: "power3.out",
                 scrollTrigger: {
                   trigger: element,           // Trigger animation when the element is in view
-                  start: "top 75%",            // Trigger when top of the element is 80% into the viewport
-                  end: "bottom 50%",
+                  // start: "top",            // Trigger when top of the element is 80% into the viewport
+                  // end: "bottom 50%",
                   scrub: 0,
                   toggleActions: "play none none reverse",
                   once: false,                 // Animation only triggers once
@@ -70,8 +70,8 @@ function App() {
                 ease: "power3.out",
                 scrollTrigger: {
                   trigger: element,
-                  start: "top 75%",         // Trigger when top of the element is 80% into the viewport
-                  end: "bottom 50%",
+                  // start: "top 75%",         // Trigger when top of the element is 80% into the viewport
+                  // end: "bottom 50%",
                   scrub: 0,
                   toggleActions: "play none none reverse",
                   once: false,              // Animation only triggers once
@@ -98,8 +98,8 @@ function App() {
             ease: "power3.out",
             scrollTrigger: {
               trigger: form,
-              start: "top 80%",      // Trigger when top of the form reaches 80% of viewport
-              end: "bottom 50%",
+              // start: "top 80%",      // Trigger when top of the form reaches 80% of viewport
+              // end: "bottom 50%",
               scrub: 0,
               toggleActions: "play none none reverse",
               once: false,           // Animation only triggers once
