@@ -22,12 +22,12 @@ const ThemeSwitcher = () => {
     return (
         <button
             onClick={toggleTheme}
-            className="flex items-center justify-center w-10 h-10 rounded-full m-auto transition-all transform md:hover:scale-110 md:hover:rotate-12 ease-in-out duration-300 z-[999999]"
+            className="flex items-center justify-center w-10 h-10 rounded-full m-auto transition-all transform xl:hover:scale-110 xl:hover:rotate-12 ease-in-out duration-300 z-[999999]"
         >
             {isDarkMode ? (
-                <MdOutlineLightMode className="w-full h-full text-gray-400 hover:text-gray-100 p-2 backdrop-blur-[4px] bg-[#e6ebf408] dark:bg-[#00000000]  rounded-[1rem]" />
+                <MdOutlineLightMode className="w-full h-full text-gray-400 hover:text-gray-100 p-2 xl:backdrop-blur-[4px] xl:bg-[#e6ebf408] xl:dark:bg-[#00000000]  rounded-[1rem]" />
             ) : (
-                <PiMoonStarsBold className="w-full h-full text-gray-600 hover:text-gray-800 p-2 backdrop-blur-[4px] bg-[#e6ebf408] dark:bg-[#00000000]  rounded-[1rem]" />
+                <PiMoonStarsBold className="w-full h-full text-gray-600 hover:text-gray-800 p-2 xl:backdrop-blur-[4px] xl:bg-[#e6ebf408] xl:dark:bg-[#00000000]  rounded-[1rem]" />
             )}
         </button>
     );

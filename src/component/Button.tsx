@@ -22,7 +22,7 @@ const Button: React.FC<ButtonProps> = ({
     <>
       <a
         href={url}
-        className={`text-animate svg-animate flex justify-center items-center gap-2 decoration-none  ${
+        className={`text-animate svg-animate flex justify-center items-center gap-2 decoration-none text-center ${
           varient === "transparent"
             ? ""
             : "bg-gradient-light dark:bg-gradient-dark btn-primary hover:scale-105"
@@ -39,7 +39,7 @@ const Button: React.FC<ButtonProps> = ({
         }}
       >
         <span className={`${icononly ? "d-lg-none" : ""}`}>{text}</span>
-        <span className="">{icon}</span>
+        {icon ? <span className="">{icon}</span> : null}
       </a>
     </>
   );

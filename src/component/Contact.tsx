@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <section id="contact" className="py-[5rem]">
       <Tag text="Contact" icon={<VscSparkleFilled />} />
-      <h1 className="heading text-[#8f56cc] text-[3rem] [line-height:1.2] py-5">
+      <h1 className="heading text-[#8f56cc] text-[2rem] xl:text-[3rem] [line-height:1.2] py-5">
         Let's make something awesome together!
       </h1>
       <ContactForm />   

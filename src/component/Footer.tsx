@@ -26,7 +26,7 @@ const Footer = () => {
         hello? Drop me a line and I'll get back as soon as possible.
       </p>
       <hr className="my-5 border-[#d1d5e0] dark:border-[#303033]" />
-      <div className="flex justify-between items-center mb-[5rem]">
+      <div className="flex justify-between items-start sm:items-center mb-[5rem] flex-col sm:flex-row">
         <div className="subheading">
           <h5 className="title text-[#22232c] dark:text-[#e9e9f1] text-base">Location</h5>
           <p className="detail text-[#666a79] dark:text-[#a1a1af] text-base font-[400]">{Data.address}</p>

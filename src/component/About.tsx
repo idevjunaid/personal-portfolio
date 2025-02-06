@@ -26,7 +26,7 @@ const About = () => {
     <>
     <section id="about" className="py-[5rem]">
     <Tag text="About Me" icon={<VscSparkleFilled />} />
-      <h1 className="heading text-[#8f56cc] text-[3rem] [line-height:1.2] py-5 mb-2">
+      <h1 className="heading text-[#8f56cc] text-[2rem] xl:text-[3rem] [line-height:1.2] py-5 mb-2">
         Turning complex problems into simple design
       </h1>
       <div className="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-4 justify-center align-center mb-10">
@@ -47,7 +47,7 @@ const About = () => {
           </p>
         </div>
       </div>
-      <div className="flex gap-5 mb-48 flex-col lg:flex-row">
+      <div className="flex gap-5 mb-48 flex-col xl:flex-row">
         <div className="info text-[#424550] dark:text-[#c7c6d3] font-[20px] [line-height:28px] font-[600]">
           <p className="mb-5">
             I wonder if I've been changed in the night? Let me think. Was I the

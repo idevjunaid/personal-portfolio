@@ -7,7 +7,6 @@ import Loader from './component/Loader';
 import Portfolio from './component/Portfolio';
 import About from './component/About';
 import Resume from './component/Resume';
-import Testimonial from './component/Testimonial';
 import Contact from './component/Contact';
 import Footer from './component/Footer';
 
@@ -37,11 +36,11 @@ function App() {
   return (
     <>
       <Loader loading={isLoading} />
-      <div className='main container m-auto gap-4 flex flex-col lg:flex-row'>
-        <aside className='lg:fixed lg:max-w-96'>
+      <div className='main container m-auto gap-4 flex flex-col xl:flex-row'>
+        <aside className='xl:fixed xl:max-w-96'>
           <Card />
         </aside>
-        <main className='ml-0 lg:ml-96 w-full'>
+        <main className='ml-0 xl:ml-96 w-full'>
 
           <Navbar />
           <div className="container m-auto px-2">
@@ -49,7 +48,6 @@ function App() {
             <Portfolio />
             <About />
             <Resume />
-            <Testimonial />
             <Contact />
           </div>
           <Footer />

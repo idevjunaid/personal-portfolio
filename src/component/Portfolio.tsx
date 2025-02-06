@@ -39,10 +39,10 @@ const Portfolio: React.FC = () => {
     <>
       <section id="portfolio" className="py-[5rem]" >
         <Tag text="Portfolio" icon={<VscSparkleFilled />} />
-        <h1 className="heading text-[#8f56cc] text-[3rem] [line-height:1.2] py-5 mb-2">
+        <h1 className="heading text-[#8f56cc] text-[2rem] xl:text-[3rem] [line-height:1.2] py-5 mb-2">
           Check out my featured projects
         </h1>
-        <div className="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-4 relative">
+        <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-4 relative">
           {sections.map(([sectionKey, sectionValue], sectionIndex) => (
             <div key={sectionKey} className="relative">
               {sectionValue.map((card: any, cardIndex: number) => {

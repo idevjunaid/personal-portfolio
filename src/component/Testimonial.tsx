@@ -35,10 +35,10 @@ const Testimonial = () => {
   return (
     <section id="testimonial" className="py-[5rem]">
       <Tag text="Testimonial" icon={<VscSparkleFilled />} />
-      <h1 className="heading text-[#8f56cc] text-[3rem] [line-height:1.2] py-5">
+      <h1 className="heading text-[#8f56cc] text-[2rem] xl:text-[3rem] [line-height:1.2] py-5">
         Clients say about me
       </h1>
-      <div className="slider-container max-w-[865px] overflow-hidden relative">
+      <div className="slider-container max-w-[585px] xl:max-w-[865px]  overflow-hidden relative">
         <Swiper
           loop={true}
           autoplay={{
