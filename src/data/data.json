@@ -50,11 +50,13 @@
       },
       {
         "title": "Our Better World",
+        "image": "ourbetterworld",
         "description": "Worked on custom modules.",
         "stack": "Drupal"
       },
       {
         "title": "360training",
+        "image": "training",
         "description": "Handled backend functionalities and custom modules.",
         "stack": "Drupal"
       }

@@ -1,10 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { IoCloseSharp } from "react-icons/io5";
 import { FaChevronLeft } from "react-icons/fa";
 import { FaChevronRight } from "react-icons/fa";
-import { RiShareLine } from "react-icons/ri";
-import { MdOutlineFullscreen } from "react-icons/md";
-import { RiZoomInLine } from "react-icons/ri";
 import Tag from "./Tag";
 import {
   training,
@@ -44,11 +41,30 @@ const Gallery: React.FC<GalleryProps> = ({ items, onClose }) => {
     );
   };
 
+    // Close on Esc key & prevent page scroll
+    useEffect(() => {
+      const handleKeyDown = (event: KeyboardEvent) => {
+        if (event.key === "Escape") {
+          onClose();
+        }
+      };
+  
+      // Disable scroll
+      document.body.style.overflow = "hidden";
+      window.addEventListener("keydown", handleKeyDown);
+  
+      return () => {
+        // Enable scroll on close
+        document.body.style.overflow = "auto";
+        window.removeEventListener("keydown", handleKeyDown);
+      };
+    }, [onClose]);
+
   return (
-    <div className="gallery-modal fixed w-full  top-0 left-0 flex justify-center items-center z-[999999] bg-[#212121] flex flex-col ">
-      <div className="border border-1 border-red-600 py-1 px-3 flex justify-between w-full align-center z-[1]">
+    <div className="gallery-modal fixed w-full  top-0 left-0 flex items-center z-[999999] bg-[#212121] flex flex-col h-[100vh]">
+      <div className="py-1 px-3 flex justify-between w-full align-center z-[1]">
         <div className="number py-2 px-4 text-[#ffffff] font-xl bg-[#0006] rounded-[1.25rem]">
-          1/4
+        {currentIndex + 1}/{items.length}
         </div>
         <div className="btns_holder flex gap-2 align-center flex-row-reverse">
           <button
@@ -57,43 +73,27 @@ const Gallery: React.FC<GalleryProps> = ({ items, onClose }) => {
           >
             <IoCloseSharp className="text-2xl" />
           </button>
-          <button
-            onClick={onClose}
-            className="bg-[#0006] rounded-[1.25rem] px-3.5 border border-1 border-light py-2.5 text-[#fff]"
-          >
-            <RiShareLine className="text-xl" />
-          </button>
-          <button
-            onClick={onClose}
-            className="bg-[#0006] rounded-[1.25rem] px-3.5 border border-1 border-light py-2.5 text-[#fff]"
-          >
-            <MdOutlineFullscreen className="text-xl" />
-          </button>
-          <button
-            onClick={onClose}
-            className="bg-[#0006] rounded-[1.25rem] px-3.5 border border-1 border-light py-2.5 text-[#fff]"
-          >
-            <RiZoomInLine className="text-xl" />
-          </button>
         </div>
       </div>
-      <div className="relative w-full h-[80%]">
+      <div className="relative w-full h-full max-h-screen">
         <button
           onClick={handlePrev}
           className="absolute left-4 top-1/2 transform -translate-y-1/2 text-black rounded-[1.25rem] p-3 bg-[#aa70e0] cursor-pointer"
         >
           <FaChevronLeft className="text-xl" />
         </button>
-        <div className="border border-1 border-red-600 p-4 rounded-lg max-w-[75%] m-auto align-center h-full pt-12 pb-10">
+        <div className="p-4 rounded-lg lg:max-w-[75%] m-auto align-center max-h-screen h-full pt-12 pb-10">
+          <div className="img_holder max-h-[50%] lg:max-h-[70%] max-w-[75%] w-full h-full overflow-hidden m-auto object-cover flex justify-center">
           <img
             src={imageMap[imageKey]}
             alt={items[currentIndex].title}
-            className="w-auto max-h-[70%] aspect-auto rounded-lg m-auto "
+            className="h-full object-cover rounded-lg"
           />
-          <div className="max-w-[50%] m-auto rounded-[1.2rem] p-4 bg-[#0006] border border-1 border-red-900 mt-3">
+          </div>
+          <div className="lg:max-w-[60%] sm:max-w-[80%] max-w-[100%] m-auto rounded-[1.2rem] p-4 bg-[#0006] mt-3">
             <a
               href={items[currentIndex].link}
-              className="link text-dark decoration-none text-[2.4rem]"
+              className="link text-dark decoration-none text-[1.8rem] lg:text-[2.4rem]"
             >
               {items[currentIndex].title}
             </a>

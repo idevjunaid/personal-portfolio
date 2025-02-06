@@ -71,16 +71,16 @@ const Portfolio: React.FC = () => {
                         />
                       </div>
                     </a>
-                    <figcaption className="absolute bottom-2 left-2">
-                      {sectionIndex === 0 ? (
-                        <Tag text={card.title} bg invert />
-                      ) : (
-                        <Tag text={card.title} bg />
-                      )}
-                    </figcaption>
                   </div>
                 ) : null;
               })}
+              <figcaption className="absolute bottom-2 left-2">
+                {sectionIndex === 0 ? (
+                  <Tag text={sectionKey} bg invert />
+                ) : (
+                  <Tag text={sectionKey} bg />
+                )}
+              </figcaption>
             </div>
           ))}
         </div>

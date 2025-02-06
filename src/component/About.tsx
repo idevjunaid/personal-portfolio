@@ -29,7 +29,7 @@ const About = () => {
       <h1 className="heading text-[#8f56cc] text-[2rem] xl:text-[3rem] [line-height:1.2] py-5 mb-2">
         Turning complex problems into simple design
       </h1>
-      <div className="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-4 justify-center align-center mb-10">
+      <div className="grid grid-cols-[repeat(auto-fit,minmax(350px,1fr))] gap-4 justify-center align-center mb-10">
         <div className="card border border-1 border-[#d1d5e0] rounded-[1.25rem] text-center dark:border-[#d1d1cf80] p-[30px]">
           <h1 className="heading text-[#8f56cc] text-[3.5rem] [line-height:1.2]">
             2+
@@ -85,7 +85,7 @@ const About = () => {
             </div>
         </div>
       </div>
-      <div className="cards-holder grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-4 justify-center align-center">
+      <div className="cards-holder grid grid-cols-[repeat(auto-fit,minmax(350px,1fr))] gap-4 justify-center align-center">
       {aboutcards.map(([cardKey, card], cardIndex)=>{
         const imageKey = card.image as keyof typeof imageMap;
         return(
