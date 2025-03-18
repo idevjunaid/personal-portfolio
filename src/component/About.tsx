@@ -50,17 +50,13 @@ const About = () => {
       <div className="flex gap-5 mb-48 flex-col xl:flex-row">
         <div className="info text-[#424550] dark:text-[#c7c6d3] font-[20px] [line-height:28px] font-[600]">
           <p className="mb-5">
-            I wonder if I've been changed in the night? Let me think. Was I the
-            same when I got up this morning? I almost think I can remember
-            feeling a little different. But if I'm not the same, the next
-            question is 'Who in the world am I?' Ah, that's the great puzzle!
+          I wonder if I’ve changed with every project I’ve built. Let me think. Was I the same developer when I first started? I almost remember feeling different. But if I’m not the same, then the next question is—‘What kind of developer am I now?’ Ah, that’s the great puzzle!
           </p>
           <p className="mb-5">
-            Be what you would seem to be - or, if you'd like it put more simply
-            - never imagine yourself not to be otherwise than what it might
-            appear to others that what you were or might have been was not
-            otherwise than what you had been would have appeared to them to be
-            otherwise.
+          I have spent my career as a full-stack Drupal developer, creating custom themes and modules and working on existing projects. Alongside this, I’ve built personal projects in the MERN stack, including a task management system, a notes app, and user authentication.
+          </p>
+          <p className="mb-5">
+          I’ve been with the same company since the start, learning and growing with every challenge. But the journey doesn’t stop here—I’m always open to new opportunities, new ideas, and new ways to create.
           </p>
           <div className="btn_holder">
           <Button text="Download CV" varient="primary" url="#" icon={<MdOutlineFileDownload fontSize={30}/>} onClick={handleDownload} />
@@ -69,7 +65,7 @@ const About = () => {
         <div className="info">
             <div className="card mb-4">
                 <p className="label font-semi-bold capitalize text-[#424550] dark:text-[#c7c6d3] text-xs">name</p>
-                <h4 className="detail text-[#22232c] dark:text-[#e9e9f1] capitalize">{personalInfo.name}</h4>
+                <h4 className="detail text-[#22232c] dark:text-[#e9e9f1] capitali ze">{personalInfo.name}</h4>
             </div>
             <div className="card mb-4">
                 <p className="label font-semi-bold capitalize text-[#424550] dark:text-[#c7c6d3] text-xs">Phone</p>
@@ -77,7 +73,7 @@ const About = () => {
             </div>
             <div className="card mb-4">
                 <p className="label font-semi-bold capitalize text-[#424550] dark:text-[#c7c6d3] text-xs">Email</p>
-                <h4 className="detail text-[#22232c] dark:text-[#e9e9f1] capitalize">{personalInfo.email}</h4>
+                <h4 className="detail text-[#22232c] dark:text-[#e9e9f1]">{personalInfo.email}</h4>
             </div>
             <div className="card mb-4">
                 <p className="label font-semi-bold capitalize text-[#424550] dark:text-[#c7c6d3] text-xs">Location</p>

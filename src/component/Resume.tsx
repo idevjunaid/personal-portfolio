@@ -32,11 +32,10 @@ const Resume = () => {
           Education and practical experience
         </h1>
         <p className="desc text-[#424550] dark:text-[#c7c6d3] text-base mb-16 font-normal">
-          Be what you would seem to be - or, if you'd like it put more simply -
-          never imagine yourself not to be otherwise than what it might appear
-          to others that what you were or <a href="#">might have been</a> was
-          not otherwise than what you had been would have appeared to them to be
-          otherwise.
+          Learn, evolve, and build – or, to put it simply,
+          never stop seeking knowledge, for growth comes from curiosity.
+          What you know today shapes what you create tomorrow,
+          and every challenge is just another lesson leading to mastery.
         </p>
         <div className="education py-5">
           <h1 className="title text-3xl text-[#22232c] dark:text-[#e9e9f1] mb-5">My Education</h1>
@@ -46,12 +45,11 @@ const Resume = () => {
                 <div
                   key={educationIndex}
                   id={educationKey}
-                  className={`card p-5 flex flex-col xl:flex-row xl:items-center gap-5 border border-r-0 border-l-0 ${
-                    educationIndex === 0
+                  className={`card p-5 flex flex-col xl:flex-row xl:items-center gap-5 border border-r-0 border-l-0 ${educationIndex === 0
                       ? "border-t-1 border-b-1"
                       : "border-b-2"
-                  } border-[#d1d5e0] dark:border-[#303033]`} 
-                  
+                    } border-[#d1d5e0] dark:border-[#303033]`}
+
                 >
                   <p className="duration flex-[1.5] text-sm text-[#424550] dark:text-[#c7c6d3] font-[400]">{educationValue.duration}</p>
                   <div className="info flex-[3] text-xl text-[#22232c] dark:text-[#e9e9f1] font-[600]">
@@ -72,11 +70,10 @@ const Resume = () => {
                 <div
                   key={workIndex}
                   id={workKey}
-                  className={`card p-5 flex flex-col xl:flex-row xl:items-center gap-5 border border-r-0 border-l-0 ${
-                    workIndex === 0
+                  className={`card p-5 flex flex-col xl:flex-row xl:items-center gap-5 border border-r-0 border-l-0 ${workIndex === 0
                       ? "border-t-1 border-b-1"
                       : "border-b-2"
-                  } border-[#d1d5e0] dark:border-[#303033]`} 
+                    } border-[#d1d5e0] dark:border-[#303033]`}
                 >
                   <p className="duration flex-[1.5] text-sm text-[#424550] dark:text-[#c7c6d3] font-[400]">{workValue.duration}</p>
                   <div className="info flex-[3] text-xl text-[#22232c] dark:text-[#e9e9f1] font-[600]">
@@ -92,15 +89,15 @@ const Resume = () => {
         <div className="tools py-5">
           <h1 className="title text-3xl text-[#22232c] dark:text-[#e9e9f1] mb-5">My Favourite Tools</h1>
           <div className="cards-holder grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-5">
-          {tool.map(([toolKey, toolValue], toolIndex) => {
-            const imageKey = toolValue.image as keyof typeof imageMap;
-            return (
-              <div key={toolIndex} id={toolKey} className="card p-5 border border-1 border-[#d1d5e0] rounded-[2rem] text-center">
-                <img src={imageMap[imageKey]} alt={toolValue.title} className="m-auto" />
-                <p className="description text-[#22232c] dark:text-[#e9e9f1]">{toolValue.title}</p>
-              </div>
-            );
-          })}
+            {tool.map(([toolKey, toolValue], toolIndex) => {
+              const imageKey = toolValue.image as keyof typeof imageMap;
+              return (
+                <div key={toolIndex} id={toolKey} className="card p-5 border border-1 border-[#d1d5e0] rounded-[2rem] text-center">
+                  <img src={imageMap[imageKey]} alt={toolValue.title} className="m-auto" />
+                  <p className="description text-[#22232c] dark:text-[#e9e9f1]">{toolValue.title}</p>
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>
