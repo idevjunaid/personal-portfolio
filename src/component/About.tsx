@@ -3,7 +3,7 @@ import { VscSparkleFilled } from "react-icons/vsc";
 import data from "../data/data.json";
 import Button from "./Button";
 import { MdOutlineFileDownload } from "react-icons/md";
-import cvFile from "../assets/dummy.pdf";
+import cvFile from "../assets/Devjunaid.pdf";
 import { s1, s2, s3, s4 } from "../component/importImages";
 
 

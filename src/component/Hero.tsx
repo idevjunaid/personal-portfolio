@@ -6,7 +6,7 @@ import Tag from "./Tag";
 import Button from "./Button";
 import '../App.css';
 
-const cvFile = () => import("../assets/dummy.pdf");
+const cvFile = () => import("../assets/Devjunaid.pdf");
 
 const Hero: React.FC = () => {
 

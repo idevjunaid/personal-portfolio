@@ -30,7 +30,6 @@ interface GalleryProps {
 const Gallery: React.FC<GalleryProps> = ({ items, onClose }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const imageKey = items[currentIndex].image as keyof typeof imageMap;
-  console.log(items[currentIndex]);
   const handleNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % items.length);
   };
