@@ -7,6 +7,12 @@ export {default as iatse} from '../assets/iatse728.png';
 export {default as API} from '../assets/API.png';
 export {default as UserAuthentication} from '../assets/user-authentication.png';
 export {default as Portfoliopng} from '../assets/Portfolio.png';
+export {default as Comfie} from '../assets/comfie.png';
+export {default as Sollocker} from '../assets/sollockers.png';
+export {default as Tievatupa} from '../assets/tievatupa-pilardev-fi.png'
+export {default as GreyHedgehog} from '../assets/grey-hedgehog.png'
+export {default as Optimsync} from '../assets/Optimsync.png'
+export {default as Nutrition} from '../assets/Starbucks-nutrition-calculator.png'
 
 
 // webp import

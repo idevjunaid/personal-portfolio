@@ -11,6 +11,13 @@ import {
   API,
   UserAuthentication,
   Portfoliopng,
+  Comfie,
+  Sollocker,
+  Tievatupa,
+  GreyHedgehog,
+  Optimsync,
+  Nutrition,
+
 } from "../component/importImages";
 
 const imageMap = {
@@ -21,6 +28,12 @@ const imageMap = {
   API,
   UserAuthentication,
   Portfolio: Portfoliopng,
+  Comfie,
+  Sollocker,
+  Tievatupa,
+  GreyHedgehog,
+  Optimsync,
+  Nutrition
 };
 
 const Portfolio: React.FC = () => {

@@ -11,6 +11,12 @@ import {
   API,
   UserAuthentication,
   Portfoliopng,
+  Comfie,
+  Sollocker,
+  Tievatupa,
+  GreyHedgehog,
+  Optimsync,
+  Nutrition,
 } from "../component/importImages";
 
 const imageMap = {
@@ -21,6 +27,12 @@ const imageMap = {
   API: API,
   UserAuthentication: UserAuthentication,
   Portfolio: Portfoliopng,
+  Comfie: Comfie,
+  Sollocker: Sollocker,
+  Tievatupa: Tievatupa,
+  GreyHedgehog: GreyHedgehog,
+  Optimsync: Optimsync,
+  Nutrition: Nutrition,
 };
 interface GalleryProps {
   items: any[];

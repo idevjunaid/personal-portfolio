@@ -32,7 +32,7 @@ const About = () => {
       <div className="grid grid-cols-[repeat(auto-fit,minmax(350px,1fr))] gap-4 justify-center align-center mb-10">
         <div className="card border border-1 border-[#d1d5e0] rounded-[1.25rem] text-center dark:border-[#d1d1cf80] p-[30px]">
           <h1 className="heading text-[#8f56cc] text-[3.5rem] [line-height:1.2]">
-            2+
+            3+
           </h1>
           <p className="detail capitalize text-light dark:text-dark">
             year of experiance
@@ -40,7 +40,7 @@ const About = () => {
         </div>
         <div className="card border border-1 border-[#d1d5e0] rounded-[1.25rem] text-center dark:border-[#d1d1cf80] p-[30px]">
           <h1 className="heading text-[#8f56cc] text-[3.5rem] [line-height:1.2]">
-            8+
+            9+
           </h1>
           <p className="detail capitalize text-light dark:text-dark">
             projects done

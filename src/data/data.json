@@ -77,13 +77,63 @@
         "title": "Notes App",
         "stack": "MERN",
         "description": "Created a notes application for practice."
+      },
+      {
+        "title": "E-commerce Store",
+        "stack": "WordPress, WooCommerce",
+        "image": "Comfie",
+        "description": "Developed a fully functional e-commerce store using WooCommerce, implementing product listings, shopping cart, and secure payment integration."
+      },
+      {
+        "title": "Nutrition Calculator",
+        "stack": "WordPress, PHP, JavaScript",
+        "image": "Nutrition",
+        "description": "Built a custom WordPress plugin to calculate nutrition values for Starbucks items, with dynamic user input and real-time calculations."
+      },
+      {
+        "title": "AI-Autowriter",
+        "stack": "WordPress, PHP, Google Sheets API, AI",
+        "description": "Created a WordPress plugin that fetches keywords from Google Sheets, generates AI-written articles, and publishes them automatically on the site."
       }
     ],
     "react": [
       {
         "title": "Personal Portfolio",
         "image": "Portfolio",
+        "stack": "React, Tailwind CSS",
         "description": "Built several portfolio websites using React."
+      }
+    ],
+    "wordpress": [
+      {
+        "title": "Sollockers",
+        "description": "Customized WooCommerce using hooks to enable locker booking for specific date ranges.",
+        "stacks": "WordPress, WooCommerce",
+        "link": "https://sollockers.com/",
+        "image": "Sollocker"
+      },
+      {
+        "title": "Grey Hedgehog",
+        "description": "Built a WordPress website with a custom WooCommerce plugin to allow car bookings for specific dates, including optional add-on services such as chargers and extras.",
+        "stacks": "WordPress, WooCommerce",
+        "link": "https://grey-hedgehog-708595.hostingersite.com/",
+        "image": "GreyHedgehog"
+      },
+      {
+        "title": "Tievatupa",
+        "description": "Worked on styling the WordPress site and implemented custom post types, forms, and smart filters using the JetEngine plugin to enhance functionality and user experience.",
+        "stacks": "WordPress, PHP, JetEngine, CSS, JavaScript",
+        "link": "https://tievatupa.pilardev.fi/",
+        "image": "Tievatupa"
+      }
+    ],
+    "MERN": [
+      {
+        "title": "Optimsync",
+        "description": "Enhanced Optimsync dashboards by adding new features and integrating Mastra for AI agent orchestration",
+        "stack": "React, Node.js, Express.js, PostgreSQL, Mastra",
+        "link": "https://optimsync.com/",
+        "image": "Optimsync"
       }
     ]
   },
@@ -102,13 +152,13 @@
     },
     "s3": {
       "title": "CMS",
-      "tags": ["Drupal"],
+      "tags": ["Drupal", "WordPress"],
       "description": "Expertise in content management systems like Drupal to create and manage dynamic websites.",
       "image": "s03"
     },
     "s4": {
       "title": "Database",
-      "tags": ["MySQL", "MariaDB", "MongoDB"],
+      "tags": ["MySQL", "MariaDB", "MongoDB","PostgreSQL"],
       "description": "Knowledge of relational and NoSQL databases for storing and managing data efficiently.",
       "image": "s04"
     }
@@ -138,19 +188,24 @@
     "w2": {
       "title": "Frontend Drupal Developer",
       "description": "Focused on designing and implementing user interfaces using Drupal, delivering responsive and user-friendly web solutions.",
-      "duration": "2022-2024",
+      "duration": "2022-2025",
       "company": "Codeetechs",
       "link": "https://codeetechs.com"
-
     },
     "w3": {
       "title": "Fullstack Drupal Developer",
       "description": "Leading both frontend and backend development tasks, integrating custom modules, and optimizing performance for enterprise-level Drupal applications.",
-      "duration": "2024-continue",
+      "duration": "2023-2025",
       "company": "Codeetechs",
       "link": "https://codeetechs.com"
-
-    }
+    },
+     "w4": {
+    "title": "MERN Stack Developer",
+    "description": "Working on fullstack MERN projects, developing React frontend, Node/Express backend, and PostgreSQL database integration on Google Cloud.",
+    "duration": "2025-continue",
+    "company": "Genius Mind Zone",
+    "link": "https://geniusmindzone.com"
+  }
   },
   "tools": {
     "t1": {
@@ -182,31 +237,30 @@
       "image": "vscode"
     }
   },
- "testimonial": {
-  "client1": {
-    "info": {
-      "name": "John Doe",
-      "role": "Software Engineer",
-      "company": "ABC Company",
-      "siteLink" : "https://www.google.com",
-      "avatar": "avatar01",
-      "rating": 3
+  "testimonial": {
+    "client1": {
+      "info": {
+        "name": "John Doe",
+        "role": "Software Engineer",
+        "company": "ABC Company",
+        "siteLink": "https://www.google.com",
+        "avatar": "avatar01",
+        "rating": 3
+      },
+      "description": "The team demonstrated great technical skills, but there were some delays in the delivery. Overall, a good experience with room for improvement.",
+      "projectlink": "https://www.google.com"
     },
-    "description": "The team demonstrated great technical skills, but there were some delays in the delivery. Overall, a good experience with room for improvement.",
-    "projectlink": "https://www.google.com"
-  },
-  "client2": {
-    "info": {
-      "name": "John Doe",
-      "role": "Software Engineer",
-      "company": "ABC Company",
-      "siteLink" : "https://www.google.com",
-      "avatar": "avatar02",
-      "rating": 5
-    },
-    "description": "An exceptional experience working with this team! They delivered beyond expectations, met all deadlines, and provided excellent support throughout the project.",
-    "projectlink": "https://www.google.com"
+    "client2": {
+      "info": {
+        "name": "John Doe",
+        "role": "Software Engineer",
+        "company": "ABC Company",
+        "siteLink": "https://www.google.com",
+        "avatar": "avatar02",
+        "rating": 5
+      },
+      "description": "An exceptional experience working with this team! They delivered beyond expectations, met all deadlines, and provided excellent support throughout the project.",
+      "projectlink": "https://www.google.com"
+    }
   }
-}
-
 }
